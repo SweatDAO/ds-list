@@ -1,15 +1,15 @@
-pragma solidity ^0.5.15;
+pragma solidity 0.6.7;
 
-contract StructLike {
-    function val(uint256 _id) public view returns (uint256);
+abstract contract StructLike {
+    function val(uint256 _id) virtual public view returns (uint256);
 }
 
 /**
- * @title Link (Structured Link List)
+ * @title LinkedList (Structured Link List)
  * @author Vittorio Minacori (https://github.com/vittominacori)
  * @dev An utility library for using sorted linked list data structures in your Solidity project.
  */
-library Link {
+library LinkedList {
 
     uint256 private constant NULL = 0;
     uint256 private constant HEAD = 0;
